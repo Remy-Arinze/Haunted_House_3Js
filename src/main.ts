@@ -193,8 +193,8 @@ scene.add(ambientLight)
 // Directional light
 const moonLight = new THREE.DirectionalLight('#ffffff', 1)
 moonLight.position.set(4, 0.3, - 2)
-moonLight.shadow.mapSize.width = 256
-moonLight.shadow.mapSize.height = 256
+// moonLight.shadow.mapSize.width = 256
+// moonLight.shadow.mapSize.height = 256
 moonLight.shadow.camera.far = 15
 gui.add(moonLight, 'intensity').min(0).max(1).step(0.001)
 gui.add(moonLight.position, 'x').min(- 5).max(5).step(0.001)
