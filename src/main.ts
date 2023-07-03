@@ -40,12 +40,12 @@ const grassRoughnessTexture = textureLoader.load('/textures/grass/roughness.jpg'
 const cubeLoader = new THREE.CubeTextureLoader();
 
 const envMap = cubeLoader.load([
-  '/textures/environmentMaps/2/px.jpg',
-  '/textures/environmentMaps/2/nx.jpg',
-  '/textures/environmentMaps/2/py.jpg',
-  '/textures/environmentMaps/2/ny.jpg',
-  '/textures/environmentMaps/2/pz.jpg',
-  '/textures/environmentMaps/2/nz.jpg'
+  '/textures/environmentMaps/0/px.jpg',
+  '/textures/environmentMaps/0/nx.jpg',
+  '/textures/environmentMaps/0/py.jpg',
+  '/textures/environmentMaps/0/ny.jpg',
+  '/textures/environmentMaps/0/pz.jpg',
+  '/textures/environmentMaps/0/nz.jpg'
 ])
 
 grassColorTexture.repeat.set(10, 10)
@@ -274,10 +274,10 @@ renderer.shadowMap.enabled = true
 /**
  * Animate
  */
-const clock = new THREE.Clock()
+// const clock = new THREE.Clock()
 
 const tick = () => {
-  const elapsedTime = clock.getElapsedTime()
+  // const elapsedTime = clock.getElapsedTime()
 
   // Update controls
   controls.update()
