@@ -94,7 +94,7 @@ roof.rotation.y = Math.PI * 0.25
 house.castShadow = true
 
 
-const door = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.MeshStandardMaterial({
+const door = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.MeshPhysicalMaterial({
   map: doorColorTexture,
   alphaMap: doorAlphaTexture,
   normalMap: doorNormalTexture,
